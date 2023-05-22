@@ -1,0 +1,148 @@
+cell_states:
+  Proliferation:
+    - KI67_Nucleus_Mean
+    - KI67_Nucleus_StdDev
+  Apoptosis:
+    - CASP3_Cell_Mean
+    - CASP3_Cell_StdDev
+    - ANNEXINV_Cell_Mean
+    - ANNEXINV_Cell_StdDev
+  AntigenPresentation:
+    - HLAI_Cell_Mean
+    - HLAI_Cell_StdDev
+    - B2MG_Cell_Mean
+    - B2MG_Cell_StdDev
+  CTLA4Signaling:
+    - CD28_Cell_Mean
+    - CD28_Cell_StdDev
+    - CD86_Cell_Mean
+    - CD86_Cell_StdDev
+    - CTLA4_Cell_Mean
+    - CTLA4_Cell_StdDev
+  PD1Signaling:
+    - PD1_Cell_Mean
+    - PD1_Cell_StdDev
+    - PDL1_Cell_Mean
+    - PDL1_Cell_StdDev
+  LAG3Signaling:
+    - LAG3_Cell_Mean
+    - LAG3_Cell_StdDev
+    - HLAII_Cell_Mean
+    - HLAII_Cell_StdDev
+    
+cell_types:
+  Helper_T_cells:
+    - CD45_Cell_Mean
+    - CD45_Cell_StdDev
+    - CD3_Cell_Mean
+    - CD3_Cell_StdDev
+    - CD4_Cell_Mean
+    - CD4_Cell_StdDev
+  Cytotoxic_T_cells:
+    - CD45_Cell_Mean
+    - CD45_Cell_StdDev
+    - CD3_Cell_Mean
+    - CD3_Cell_StdDev
+    - CD8_Cell_Mean
+    - CD8_Cell_StdDev
+    - GZB_Cell_Mean
+    - GZB_Cell_StdDev
+  Tregs:
+    - CD45_Cell_Mean
+    - CD45_Cell_StdDev
+    - CD3_Cell_Mean
+    - CD3_Cell_StdDev
+    - CD4_Cell_Mean
+    - CD4_Cell_StdDev
+    - FOXP3_Nucleus_Mean
+    - FOXP3_Nucleus_StdDev
+  B_cells:
+    - CD45_Cell_Mean
+    - CD45_Cell_StdDev
+    - CD19_Cell_Mean
+    - CD19_Cell_StdDev
+    - CD20_Cell_Mean
+    - CD20_Cell_StdDev
+    - CD21_Cell_Mean
+    - CD21_Cell_StdDev
+  Plasma_cells:
+    - CD38_Cell_Mean
+    - CD38_Cell_StdDev
+    - KAPPA_Cell_Mean
+    - KAPPA_Cell_StdDev
+    - LAMBDA_Cell_Mean
+    - LAMBDA_Cell_StdDev
+  Macrophages:
+    - HLAII_Cell_Mean
+    - HLAII_Cell_StdDev
+    - CD68_Cell_Mean
+    - CD68_Cell_StdDev
+    - CD163_Cell_Mean
+    - CD163_Cell_StdDev
+    - CD206_Cell_Mean
+    - CD206_Cell_StdDev
+  Dendritic_cells:
+    - CD14_Cell_Mean
+    - CD14_Cell_StdDev
+    - CD11C_Cell_Mean
+    - CD11C_Cell_StdDev
+    - CD11B_Cell_Mean
+    - CD11B_Cell_StdDev
+  Tumor_cells:
+    - GP100_Cell_Mean
+    - GP100_Cell_StdDev 
+    - MART1_Cell_Mean
+    - MART1_Cell_StdDev
+    - SOX10_Nucleus_Mean
+    - SOX10_Nucleus_StdDev
+    - NAKATPASE_Membrane_Mean
+    - NucleusCell_area_ratio
+    - Cell_Length_um
+  Neutrophils:
+    - CD15_Cell_Mean
+    - CD15_Cell_StdDev
+    - MPO_Cell_Mean
+    - MPO_Cell_StdDev
+  Myofibroblasts:
+    - ASMA_Cell_Mean
+    - ASMA_Cell_StdDev
+    - ASMA_Membrane_Median
+  Endothelial_cells:
+    - CD31_Cell_Mean
+    - CD31_Cell_StdDev
+  Natural_killer_cells:
+    - CD16_Cell_Mean
+    - CD16_Cell_StdDev
+    - CD56_Cell_Mean
+    - CD56_Cell_StdDev
+  Monocytes:
+    - CD14_Cell_Mean
+    - CD14_Cell_StdDev
+    - CD15_Cell_Mean
+    - CD15_Cell_StdDev
+    - CD16_Cell_Mean
+    - CD16_Cell_StdDev
+  Mast_cells:
+    - TRYPTASE_Cell_Mean
+    - TRYPTASE_Cell_StdDev
+
+hierarchy:
+  Immune_cells:
+    Myeloid cells:
+      - Macrophages
+      - Monocytes
+      - Dendritic_cells
+      - Neutrophils
+      - Natural_killer_cells
+      - Mast_cells
+    Lymphocytes:
+      T cells:
+        - Helper_T_cells
+        - Cytotoxic_T_cells
+        - Tregs
+      B cells:
+        - B_cells
+        - Plasma_cells
+  Stromal:
+    - Myofibroblasts
+    - Endothelial_cells
