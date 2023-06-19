@@ -6,7 +6,7 @@ import qupath.lib.images.servers.ImageServerMetadata;
 
 // Define resolution - 1.0 means full size
 double downsample = 1.0 //Downsample factor when exporting raw images and their overlays
-output_fmt='.ome.tif' //Supported formats include .png, .tif, .jpg. Default compression scheme for each format
+output_fmt='.tif' //Supported formats include .ome.tif, .png, .tif, .jpg. Default compression scheme for each format
 
 // Create output directory inside the project
 def dirOutput = buildFilePath(PROJECT_BASE_DIR, 'cores_raw')
